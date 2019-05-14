@@ -39,6 +39,14 @@ section.module.parallax h1 {
   text-transform: uppercase;
   text-shadow: 0 0 10px white;
 }
+section.module.parallax p {
+  color: #1e1e1e;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 0 10px white;
+}
 section.module.parallax-1 {
   background-image: url("https://images.unsplash.com/photo-1526399743290-f73cb4022f48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
   background-position: 50% 0;
@@ -78,11 +86,11 @@ section.module.parallax-3 {
     padding: 200px 0;
   }
   section.module.parallax h1 {
-    font-size: 96px;
+    font-size: 50px;
   }
 }
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
-    font-size: 160px;
+    font-size: 60px;
   }
 }
