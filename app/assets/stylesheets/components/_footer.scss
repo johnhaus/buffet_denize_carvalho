@@ -1,0 +1,30 @@
+.footer {
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: #fff;
+  opacity: 0.85;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer p {
+  color: #fff;
+}
+
+.footer h2 {
+  color: #fff;
+}
