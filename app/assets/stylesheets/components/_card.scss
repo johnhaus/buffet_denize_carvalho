@@ -4,15 +4,22 @@
   grid-gap: 16px;
 }
 
+.card-border {
+  height: 430px;
+  padding: 5px;
+  border: 25px solid transparent;
+  border-image: url("border6.png") 100 stretch;
+}
+
 .card-category {
-  height: 200px;
-  margin: 10px;
+  height: 370px;
   text-align: center;
   color: #fff;
+  z-index: -1;
 }
 
 .card-category p {
-  padding-top: 160px;
+  padding-top: 300px;
 }
 
 // Smallest device
