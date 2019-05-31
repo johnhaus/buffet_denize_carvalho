@@ -1,0 +1,120 @@
+.slider{
+  position:relative;
+}
+.slider > .item{
+  position: absolute;
+  opacity: 0;
+  width:100%;
+  height: 100%;
+  top:0;
+  left:0;
+  overflow:hidden;
+}
+.slider > .item.active{
+  opacity: 1;
+}
+.slider .slider-control{
+  color: rgba(150,150,150,.6);
+  position:absolute;
+  top:calc(50% - 30px);
+  height:60px;
+  width:60px;
+  line-height:60px;
+  z-index: 1;
+  text-align:center;
+  cursor: pointer;
+  opacity: .5;
+}
+.slider .slider-control:hover{
+  opacity: 1;
+}
+.slider .slider-control.next{
+  right:0;
+}
+.slider .slider-control.prev{
+  left:0;
+}
+.slider .slider-nav{
+  width:100%;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+  text-align:center;
+  bottom:0;
+  left:0;
+}
+.slider .slider-nav a{
+  display: inline-block;
+  margin:5px;
+  width:15px;
+  height:15px;
+  background: rgba(150,150,150,.6);
+  overflow: hidden;
+  border-radius:50%;
+  opacity: .5;
+}
+.slider .slider-nav a:hover{
+  opacity: .9;
+}
+.slider .slider-nav a.active{
+    background: #fff;
+  opacity: 1;
+}
+
+/*  Animations  */
+.slider .item.active .item-content {
+  animation-name: fadeUp;
+  animation-duration: 0.5s;
+}
+.slider .item.active .item-content p {
+  animation-name: fadeUp;
+  animation-duration: .8s;
+}
+
+@keyframes fadeUp {
+  0% {
+    margin-top: 60px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.slider {
+  height: 300px;
+  margin: 30px auto;
+  background: #fff;
+  color: #000;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8);
+}
+.slider > .item {
+  text-align: center;
+}
+.slider > .item .item-content {
+  position: absolute;
+  left: calc(50% - 200px);
+}
+
+.comment {
+  display: flex;
+  width: 400px;
+  text-align: center;
+  padding: 20px;
+  background: white;
+}
+
+.comment .comment-content {
+  flex-grow: 1;
+  padding: 0 24px;
+}
+
+.comment p {
+  margin-bottom: 0px !important;
+}
+
+.comment small {
+  color: #999999;
+  font-weight: bold;
+}
