@@ -1,19 +1,21 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  margin: 0px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
-  max-width: 25%;
-  padding: 0 5px;
+  width: 25%;
+  // padding: 0 5px;
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-  max-width: 100%;
+  width: 100%;
   padding: 5px;
 }
 
@@ -21,14 +23,14 @@
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
-    max-width: 50%;
+    width: 50%;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .column {
     flex: 100%;
-    max-width: 100%;
+    width: 100%;
   }
 }
