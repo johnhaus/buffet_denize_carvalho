@@ -56,17 +56,29 @@ section.module.parallax p {
 }
 section.module.parallax-1 {
   min-height: 100vh;
-  background: image-url("Pic1.jpg");
+  background: image-url("Image5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 section.module.parallax-2 {
-  background-image: url("https://images.unsplash.com/photo-1540315748953-deaf79848e06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-  }
+  background: image-url("Image7.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
 section.module.parallax-3 {
-  background-image: url("https://images.unsplash.com/photo-1527751171053-6ac5ec50000b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
-  }
+  background: image-url("Image4.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
 section.module.parallax-4 {
-  background-image: url("https://images.unsplash.com/photo-1527751171053-6ac5ec50000b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
-  }
+  background: image-url("Image3.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
 
 @media all and (min-width: 600px) {
   section.module h2 {
