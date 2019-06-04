@@ -8,14 +8,12 @@ section.module:last-child {
 }
 section.module h3 {
   margin-bottom: 40px;
-  font-family: 'Dancing Script', cursive;
   font-size: 30px;
 }
 section.module p {
   margin-bottom: 40px;
   font-size: 24px;
   font-weight: 300;
-  font-family: 'Niconne', cursive;
 }
 section.module p:last-child {
   margin-bottom: 0;
@@ -37,6 +35,9 @@ section.module.parallax {
   background-color: rgba(0,123,255,0.4);
   background-blend-mode: screen;
 }
+section.module.parallax h1 {
+  font-family: 'Dancing Script', cursive;
+}
 section.module.parallax h1, h2 {
   color: #1e1e1e;
   font-size: 48px;
@@ -45,7 +46,6 @@ section.module.parallax h1, h2 {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 10px white;
-  font-family: 'Dancing Script', cursive;
 }
 section.module.parallax p {
   color: #1e1e1e;
@@ -57,7 +57,7 @@ section.module.parallax p {
 }
 section.module.parallax-1 {
   min-height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1526399743290-f73cb4022f48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-image: url("Pic1.jpg");
 }
 section.module.parallax-2 {
   background-image: url("https://images.unsplash.com/photo-1540315748953-deaf79848e06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
