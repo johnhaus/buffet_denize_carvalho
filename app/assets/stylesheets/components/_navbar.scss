@@ -69,6 +69,11 @@
 }
 
 // Display modifications for small screens
+@media screen and (max-width:890px) {
+  .nav div.main_list ul li a {
+    font-size: 20px;
+  }
+}
 
 @media screen and (max-width:768px) {
   .navTrigger {
@@ -83,6 +88,9 @@
   .nav div.show_list {
     height: auto;
     display: none;
+  }
+  .nav div.logo a {
+    font-size: 30px;
   }
   .nav div.main_list ul {
     flex-direction: column;
@@ -103,6 +111,7 @@
   .nav div.main_list ul li a {
     text-align: center;
     width: 100%;
+    font-size: 20px;
   }
   .nav div.media_button {
     display: block;
