@@ -94,12 +94,12 @@
 }
 .slider > .item .item-content {
   position: absolute;
-  left: calc(50% - 200px);
+  left: calc(50% - 160px);
 }
 
 .comment {
   display: flex;
-  width: 400px;
+  width: 300px;
   text-align: center;
   padding: 20px;
   background: white;
@@ -110,6 +110,9 @@
   padding: 0 24px;
 }
 
+.comment .comment-content p {
+  font-size: 16px;
+}
 .comment p {
   margin-bottom: 0px !important;
 }
