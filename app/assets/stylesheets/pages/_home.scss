@@ -35,10 +35,13 @@ section.module.parallax {
 }
 section.module.parallax h1 {
   font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+}
+section.module.parallax h2 {
+  font-size: 28px;
 }
 section.module.parallax h1, h2 {
   color: black;
-  font-size: 28px;
   line-height: 1;
   font-weight: 700;
   text-align: center;
