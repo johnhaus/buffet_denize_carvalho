@@ -4,10 +4,10 @@
 .slider > .item{
   position: absolute;
   opacity: 0;
-  width:100%;
+  width: calc(100% - 80px);
   height: 100%;
   top:0;
-  left:0;
+  left:20px;
   overflow:hidden;
 }
 .slider > .item.active{
@@ -57,7 +57,7 @@
   opacity: .9;
 }
 .slider .slider-nav a.active{
-    background: #fff;
+  background: #fff;
   opacity: 1;
 }
 
@@ -94,30 +94,51 @@
 }
 .slider > .item .item-content {
   position: absolute;
-  left: calc(50% - 160px);
+  // left: calc(50% - 160px);
 }
 
 .comment {
-  display: flex;
-  width: 300px;
   text-align: center;
-  padding: 20px;
-  background: white;
-}
-
-.comment .comment-content {
-  flex-grow: 1;
-  padding: 0 24px;
 }
 
 .comment .comment-content p {
-  font-size: 16px;
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.comment i {
+  padding-top: 10px;
+}
+
+.comment .comment-content h5 {
+  font-size: 20px;
+  padding-top: 30px;
 }
 .comment p {
   margin-bottom: 0px !important;
+  justify-content: center;
+  align-items: center;
 }
 
 .comment small {
   color: #999999;
   font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  .comment .comment-content p {
+    font-size: 20px;
+  }
+  .comment .comment-content h5 {
+  font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .comment .comment-content p {
+    font-size: 24px;
+  }
+  .comment .comment-content h5 {
+  font-size: 30px;
+  }
 }
