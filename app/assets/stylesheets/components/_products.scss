@@ -19,6 +19,14 @@
   padding: 5px;
 }
 
+.large-product-pic {
+  height: 240px;
+}
+
+.small-product-pic {
+  height: 220px;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 700px) {
   .column {
