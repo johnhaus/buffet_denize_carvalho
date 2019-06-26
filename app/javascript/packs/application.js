@@ -1,16 +1,26 @@
 import "bootstrap";
 import SmoothScroll from "smooth-scroll";
 
+// Scroll back to top of page when refreshed
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 
+// Show/hide menu on small screens
 $('.navTrigger').click(function () {
     $(this).toggleClass('active');
     $("#mainListDiv").toggleClass("show_list");
     $("#mainListDiv").fadeIn();
 });
 
+// Remove menu after clicking on link
+$('.navlinks').click(function () {
+    $(this).toggleClass('active');
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+});
+
+// Smooth scroll when clicking on links
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
       $('.nav').addClass('affix');
