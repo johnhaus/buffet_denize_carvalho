@@ -1,6 +1,10 @@
 import "bootstrap";
 import SmoothScroll from "smooth-scroll";
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 $('.navTrigger').click(function () {
     $(this).toggleClass('active');
     $("#mainListDiv").toggleClass("show_list");
