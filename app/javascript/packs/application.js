@@ -17,6 +17,15 @@ $('.navTrigger').click(function () {
 $('.navlinks').click(function () {
     $('.navTrigger').toggleClass('active');
     $('#mainListDiv').toggleClass('show_list');
+    $("#mainListDiv").fadeIn();
+    $("#logo").remo();
+});
+
+//  Remove links when clicking on home link
+$('.home_link').click(function () {
+    $('.navTrigger').removeClass('active');
+    $('#mainListDiv').removeClass('show_list');
+    $("#mainListDiv").fadeIn();
 });
 
 // Smooth scroll when clicking on links
