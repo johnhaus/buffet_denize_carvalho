@@ -15,8 +15,16 @@ $('.navTrigger').click(function () {
 
 // Remove menu after clicking on link
 $('.navlinks').click(function () {
-    $(this).toggleClass('active');
-    $("#mainListDiv").toggleClass("show_list");
+    $('.navTrigger').toggleClass('active');
+    $('#mainListDiv').toggleClass('show_list');
+    $("#mainListDiv").fadeIn();
+    $("#logo").remo();
+});
+
+//  Remove links when clicking on home link
+$('.home_link').click(function () {
+    $('.navTrigger').removeClass('active');
+    $('#mainListDiv').removeClass('show_list');
     $("#mainListDiv").fadeIn();
 });
 
