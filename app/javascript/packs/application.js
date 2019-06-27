@@ -15,9 +15,8 @@ $('.navTrigger').click(function () {
 
 // Remove menu after clicking on link
 $('.navlinks').click(function () {
-    $(this).toggleClass('active');
-    $("#mainListDiv").toggleClass("show_list");
-    $("#mainListDiv").fadeIn();
+    $('.navTrigger').toggleClass('active');
+    $('#mainListDiv').toggleClass('show_list');
 });
 
 // Smooth scroll when clicking on links
