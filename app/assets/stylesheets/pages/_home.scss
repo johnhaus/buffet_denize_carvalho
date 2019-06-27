@@ -63,6 +63,15 @@ section.module.parallax-1 {
   background-position: center;
   background-size: cover;
 }
+section.module.parallax-1 h3 {
+  font-family: 'Great Vibes', cursive;
+  color: black;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 0 20px white;
+}
 section.module.parallax-2 {
   background: image-url("Image7.jpg");
   background-repeat: no-repeat;
